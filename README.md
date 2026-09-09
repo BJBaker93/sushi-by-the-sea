@@ -6,10 +6,10 @@ A colourful seaside sushi restaurant for 1–4 friends, built in Unity for deskt
 
 ## Invite friends
 
-1. Open the game in a desktop browser and choose Create Room.
+1. Open the game in a desktop browser and choose **Create Restaurant**.
 2. Send friends the play link and the room code shown in your lobby.
-3. Friends choose Join Room and enter the code. Everyone readies up; the host starts the shift.
-4. Prepare at your own pace, then ready the crew to open early. Serve the visible queue, see results, and continue to the next day.
+3. Friends choose **Have a Code? Join a Friend**, enter the code, then **Join Restaurant**. Everyone readies up; the host starts the shift.
+4. Prepare at your own pace, then have every chef choose **Open Restaurant**. Serve the visible queue, see results, and continue to the next day.
 
 Rooms support up to four players. Everyone must load the same current game version. The website is public; room codes let your group join the same restaurant. No downloads or accounts are needed to play. A stable internet connection is required.
 
