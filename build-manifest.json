@@ -1,9 +1,9 @@
 {
-  "version": "0.3.0",
-  "revision": 25,
+  "version": "0.4.0",
+  "revision": 26,
   "unity": "6000.6.0f1",
   "fusion": "2.1.2.2279",
-  "networkAppVersion": "astra-plates-3",
+  "networkAppVersion": "astra-boards-4",
   "layout": "flat static deployment; generated Unity payloads unchanged",
   "files": {
     ".nojekyll": {
@@ -15,28 +15,28 @@
       "sha256": "4d0644fe20b43d078496305a2c178620ceb71d257e0f623f1bdf07c4561bddd8"
     },
     "README.md": {
-      "bytes": 3328,
-      "sha256": "2a6d6783db45c0ae2d94650592dffe58a19ae25d4100a5bed206182be3715068"
+      "bytes": 5748,
+      "sha256": "2e6d46feb38d4db8d429ef86b36ff69558ffa59ed3501943999cf8aaf4b70b0c"
     },
     "Web.data.unityweb": {
-      "bytes": 5487601,
-      "sha256": "76684e3091c48710a73489d3170af81e3145ad0cca4e915815184c0685db96c8"
+      "bytes": 5486310,
+      "sha256": "2709f65dccfb9debb4431f3b627303d25e4c4ae40d6ebcfd7f83effe716a40da"
     },
     "Web.framework.js.unityweb": {
       "bytes": 79337,
-      "sha256": "ccd74ee23b8fe1784cb278f21114fb685c8e1ebbc7276d43ad35bf073a239945"
+      "sha256": "aec2b8bf1c21584d2e571a8928a5d4a89bfed16fe4ec97c62a89e56afd7151dc"
     },
     "Web.loader.js": {
       "bytes": 48779,
-      "sha256": "3fcad854a625eeb8bc1dd2f902bd6e53a1b819f3b355217fc6acb7ef89fcf426"
+      "sha256": "18eb7d651b6b2ac63d86b455e4d6593ef34ad6e2e90cb332f3e620c98a39da07"
     },
     "Web.wasm.unityweb": {
-      "bytes": 10954390,
-      "sha256": "31793eb6ebadd12e0f33736f9b5cb34de904d3b601ed81a3e2eb2a4e32ba1db6"
+      "bytes": 10982438,
+      "sha256": "152a9117b39f7bde71ade8d823b9f774223a66d61570eb900f04a5df802ea1a7"
     },
     "index.html": {
       "bytes": 4580,
-      "sha256": "1a860f36efbe9c32876f493b70c0c69b2dcc362b90ef5d8707232633ee595c1a"
+      "sha256": "f665d7547e67222af004b6b3d93a5e4c5d53149a20c5f4a975874999a81b6c80"
     }
   }
 }

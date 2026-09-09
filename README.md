@@ -6,10 +6,10 @@ A colourful seaside sushi restaurant for 1–4 friends, built in Unity for deskt
 
 ## Invite friends
 
-1. Open the game in a desktop browser and choose **Create Restaurant**.
-2. Send friends the play link and the room code shown in your lobby.
-3. Friends choose **Have a Code? Join a Friend**, enter the code, then **Join Restaurant**. Everyone readies up; the host starts the shift.
-4. Prepare at your own pace, then have every chef choose **Open Restaurant**. Serve the visible queue, see results, and continue to the next day.
+1. Enter your name, choose **Human, Frog, Fish or Mouse**, and pick one of six outfit colours.
+2. For a fresh run, select starting **round 1, 5 or 10**, then **Create Restaurant**. Each starting round provides matching funds and equipment. **Resume Saved Run** is a separate choice when a checkpoint exists.
+3. Send friends the play link and room code. Friends choose **Have a Code? Join a Friend**, enter the code, then **Join Restaurant**.
+4. Everyone selects **I'm Ready**; the creator selects **Enter Restaurant**. Explore and prepare at your own pace, then have every chef choose **Open Restaurant**. Serve the finite queue, review Results, and continue to the next round.
 
 Rooms support up to four players. Everyone must load the same current game version. The website is public; room codes let your group join the same restaurant. No downloads or accounts are needed to play. A stable internet connection is required.
 
@@ -17,35 +17,48 @@ Rooms support up to four players. Everyone must load the same current game versi
 
 | Key | Action |
 | --- | --- |
-| WASD | Move |
+| WASD | Move with short acceleration, deceleration and smooth turning |
 | Shift | Short dash in the direction you face |
-| E | Context interaction: take, add an ingredient, pick up a plate, serve, or deposit a dirty dish |
+| Tap E | Pick up/place an item, combine ingredients, serve, or deposit a dirty dish |
+| Hold E over a whole fish on a counter | Start a fresh cutting sequence |
+| Arrow keys | Follow the cutting arrow shown above your chef |
 | Hold E at sink, hands empty | Wash the queued dishes, oldest first |
 | Q | Drop the item in your hand |
-| Arrow keys | Follow each fresh sashimi cutting sequence |
-| Space | Stop beer / fishing timing |
+| E or Space | Stop beer / fishing timing |
+| 1 / 2 | Select a topping pocket |
 | B | Recipe book |
+| Esc | Options / close |
 
-## Make a plate
+Walking is faster than the plate revision: 9.9 units/second with a short acceleration and stopping response. Leave room to turn around the solid kitchen island.
 
-**Nigiri:** empty plate → rice → sashimi.
+## Make sushi, then build a board
 
-**Maki:** empty plate → nori → rice → sashimi.
+Take a fish from the walk-in cold room and place it on any free preparation tile. **Tap E picks the fish up; hold E starts cutting.** Every portion requires its own fresh arrow sequence. Mistakes or cancellation still consume the portion and reduce its value.
 
-Carry the plate to the rice/nori or carry ingredients to a plate on the island. Each plate holds one sushi. Once placed, ingredients stay on the plate; use the bin to discard a failed recipe while keeping the reusable plate. Pocketed toppings affect quality when sashimi completes the recipe.
+Combine **loose cut fish + rice = Nigiri**. Add **nori = Maki**. Ingredients work in any order: rice plus nori can wait for fish, fish plus nori can wait for rice, and loose Nigiri can still receive nori. Carry compatible ingredients together at a supply or bring one to another on a counter. Pocketed toppings improve sushi when it first completes; upgrading loose Nigiri preserves its quality and toppings.
 
-A customer's thought bubble shows the requested type, minimum stars per plate, and beer if wanted. Later orders can ask for two or three plates; every plate must independently meet the type and star target. Several weaker plates do not add up to a stronger one.
+Put **one to three completed sushi on a reusable wooden board**. The total stars float above the board, including the recipe-variety bonus. Once boarded, sushi cannot be removed or changed. Raw ingredients stay separate from boards. Use the bin for unwanted food; a used board remains a dirty reusable dish.
 
-After a guest leaves, collect their dirty plates and mug. Press E at the sink to leave them there; any chef can hold E with empty hands to wash the queue. Clean dishes automatically return to the stockpile.
+Every empty counter tile can hold one item. The central island is one continuous solid bench with six usable tiles, and side counters provide more workspace. Empty bar tiles can be used for preparation too; clear them so customers can sit there.
+
+## Serve and wash
+
+A customer's thought bubble shows the requested sushi type and **whole-board** star target, plus beer when wanted. Normal orders ask for one board and/or one beer. A nonempty wrong-type or low-value board is accepted as a failed order and applies its HYPE penalty once. Choose a board's contents and total carefully.
+
+Preparation has no time limit. Service has a finite queue and shorter customer patience, with a **ROUND N** announcement when it opens. Beer requests begin in round 3 for around half the guests. Stop the filling mug in its ideal band above the chef, then serve it to support patience.
+
+After guests leave, collect dirty boards and mugs. Tap E at the sink to deposit a dish and free your hand. Any chef can then hold E with empty hands to wash the queue oldest-first, continuing through consecutive dishes. Release to pause. Other chefs can deposit while washing continues; clean dishes automatically return to stock. Clearing the bar frees seats.
 
 ## Build and hosting
 
-This repository contains the playable Web distribution, not the Unity source project. Version 0.3.0; Unity 6000.6.0f1; Photon Fusion 2.1.2 Shared Mode. The original project and design package remain in the owner's local workspace.
+This repository contains the playable Web distribution, not the Unity source project. Version **0.4.0**, board kitchen revision **26**; Unity **6000.6.0f1**; Photon Fusion **2.1.2 Stable 2279**, Shared Mode. The network version is `astra-boards-4`. The original project and design package remain in the owner's local workspace.
 
 GitHub Pages publishes `main` from the repository root. Unity gzip decompression fallback produces `.unityweb` payloads, so custom compression headers are unnecessary. Upload a complete matching set of the HTML, loader, data, framework and WebAssembly files when updating. Do not mix versions. `build-manifest.json` records the deployed file hashes.
 
 ## Playtest notes
 
-This is an evolving vertical slice. Saves and the recipe book are local to the browser and site address. Moving from localhost to this site does not transfer those saves. The run owner can resume saved progress in a newly created room after a disconnect; progress since the latest save may be lost. Refresh all clients after an update. Desktop Chrome has been the primary test browser; touch/mobile support is outside this slice.
+This is an evolving vertical slice. Saves and the recipe book are local to the browser and site address. Moving from localhost to this site does not transfer those saves. The run owner can resume saved progress in a newly created room after a disconnect; progress since the latest save may be lost. Compatible checkpoints migrate, while unsupported checkpoints are preserved rather than silently discarding their contents. Refresh all clients after an update.
 
-The bundled DejaVu Sans font retains its notice in `DejaVuSans-LICENSE.txt`.
+The editable handoff's `ASTRA_BUILD_REPORT.md` records tests actually executed and remaining limitations. These play instructions do not certify a browser or multiplayer test. Desktop Chrome has been the primary test browser; touch/mobile support is outside this slice.
+
+The original temporary art and audio accompany the game. The bundled DejaVu Sans font retains its notice in `DejaVuSans-LICENSE.txt`.
