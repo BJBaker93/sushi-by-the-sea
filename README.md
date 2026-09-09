@@ -17,17 +17,19 @@ Rooms support up to four players. Everyone must load the same current game versi
 
 | Key | Action |
 | --- | --- |
-| WASD | Move with short acceleration, deceleration and smooth turning |
+| WASD or arrow keys | Move with short acceleration, deceleration and smooth turning |
 | Shift | Short dash in the direction you face |
 | Tap E | Pick up/place an item, combine ingredients, serve, or deposit a dirty dish |
 | Hold E over a whole fish on a counter | Start a fresh cutting sequence |
-| Arrow keys | Follow the cutting arrow shown above your chef |
+| Arrow keys while cutting | Follow the cutting arrow shown above your chef |
 | Hold E at sink, hands empty | Wash the queued dishes, oldest first |
 | Q | Drop the item in your hand |
 | E or Space | Stop beer / fishing timing |
 | 1 / 2 | Select a topping pocket |
 | B | Recipe book |
 | Esc | Options / close |
+
+During cutting, arrow keys control the sequence. Release them after the cut before using them to move again.
 
 Walking is faster than the plate revision: 9.9 units/second with a short acceleration and stopping response. Leave room to turn around the solid kitchen island.
 
@@ -51,7 +53,7 @@ After guests leave, collect dirty boards and mugs. Tap E at the sink to deposit 
 
 ## Build and hosting
 
-This repository contains the playable Web distribution, not the Unity source project. Version **0.4.0**, board kitchen revision **26**; Unity **6000.6.0f1**; Photon Fusion **2.1.2 Stable 2279**, Shared Mode. The network version is `astra-boards-4`. The original project and design package remain in the owner's local workspace.
+This repository contains the playable Web distribution, not the Unity source project. Version **0.4.1**, board kitchen revision **26**; Unity **6000.6.0f1**; Photon Fusion **2.1.2 Stable 2279**, Shared Mode. The network version is `astra-boards-4`. The original project and design package remain in the owner's local workspace.
 
 GitHub Pages publishes `main` from the repository root. Unity gzip decompression fallback produces `.unityweb` payloads, so custom compression headers are unnecessary. Upload a complete matching set of the HTML, loader, data, framework and WebAssembly files when updating. Do not mix versions. `build-manifest.json` records the deployed file hashes.
 

@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0",
+  "version": "0.4.1",
   "revision": 26,
   "unity": "6000.6.0f1",
   "fusion": "2.1.2.2279",
@@ -15,28 +15,28 @@
       "sha256": "4d0644fe20b43d078496305a2c178620ceb71d257e0f623f1bdf07c4561bddd8"
     },
     "README.md": {
-      "bytes": 5748,
-      "sha256": "2e6d46feb38d4db8d429ef86b36ff69558ffa59ed3501943999cf8aaf4b70b0c"
+      "bytes": 5886,
+      "sha256": "0da59a8aa1f061f4830539bde92d94c9ded51ceb94f9e3fb0cce18238f6ed481"
     },
     "Web.data.unityweb": {
-      "bytes": 5486310,
-      "sha256": "2709f65dccfb9debb4431f3b627303d25e4c4ae40d6ebcfd7f83effe716a40da"
+      "bytes": 5486217,
+      "sha256": "6316eeece77a6e21a0c462047455c31bf8c5bdf265541be96be5fa2f1e0c8c58"
     },
     "Web.framework.js.unityweb": {
       "bytes": 79337,
-      "sha256": "aec2b8bf1c21584d2e571a8928a5d4a89bfed16fe4ec97c62a89e56afd7151dc"
+      "sha256": "9d106973338005e403c35f59029a3f9cb37d64a89e77c61d17e5a5132832ab19"
     },
     "Web.loader.js": {
       "bytes": 48779,
-      "sha256": "18eb7d651b6b2ac63d86b455e4d6593ef34ad6e2e90cb332f3e620c98a39da07"
+      "sha256": "f0b7834a31bc3c5403a4bbbf08c5e99ab562f5fdc9cc25c8c7de0f24c00d43aa"
     },
     "Web.wasm.unityweb": {
-      "bytes": 10982438,
-      "sha256": "152a9117b39f7bde71ade8d823b9f774223a66d61570eb900f04a5df802ea1a7"
+      "bytes": 10983420,
+      "sha256": "1d039511bcdd10c596149d32005627883aaed5e94ca7eb4925b0c1e29e44bd11"
     },
     "index.html": {
       "bytes": 4580,
-      "sha256": "f665d7547e67222af004b6b3d93a5e4c5d53149a20c5f4a975874999a81b6c80"
+      "sha256": "80925c6770927bde76d028cf3bd172807b0eed64da86e240d7b844e5acb3d322"
     }
   }
 }
